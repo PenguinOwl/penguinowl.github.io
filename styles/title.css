@@ -37,4 +37,6 @@ html {
   box-shadow: 6px 6px 5px black;
   -webkit-align-self: center; 
   align-self: center;
+  display: block;
+  margin: 0 auto;
 }
