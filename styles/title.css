@@ -22,7 +22,7 @@ html {
   background-size: cover;
 }
 #center {
-  text-align:center;
+  margin: 0 auto;
 }
 .greenbox {
   border: 2px solid green;
@@ -35,5 +35,4 @@ html {
   height: 20px;
   font-family: 'Work Sans', sans-serif;
   box-shadow: 6px 6px 5px black;
-  margin: 30 auto;
 }
