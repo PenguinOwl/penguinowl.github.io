@@ -38,3 +38,7 @@ html {
   box-shadow: 6px 6px 5px black;
   display: inline-block;
 }
+.nomargin {
+  padding: 0px;
+  margin: 0px;
+}
