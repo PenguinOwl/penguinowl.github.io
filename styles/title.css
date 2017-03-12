@@ -32,4 +32,6 @@ html {
   height: 20px;
   font-family: 'Work Sans', sans-serif;
   box-shadow: 6px 6px 5px black;
+  -webkit-align-self: center; 
+  align-self: center;
 }
