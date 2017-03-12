@@ -21,6 +21,9 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+.center {
+  text-align:center;
+}
 .greenbox {
   border: 2px solid green;
   background-color: lightgreen;
