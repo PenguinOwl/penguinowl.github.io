@@ -23,6 +23,7 @@ html {
 }
 #center {
   text-align: center;
+  width: 400px;
 }
 .greenbox {
   border: 2px solid green;
