@@ -11,7 +11,7 @@ body {
 p {
   font-family: 'Work Sans', sans-serif;
 }
-html {
+#bg {
   background: white;    
   background: -webkit-linear-gradient(right, cyan, white, white, white, cyan);
   background: -o-linear-gradient(right, cyan, white, white, white, cyan); 
