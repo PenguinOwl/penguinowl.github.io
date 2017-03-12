@@ -3,7 +3,6 @@ h1 {
   font-family: 'Nova Flat', cursive;
   text-shadow: 50px 50px 20px gray;
   font-size: 800%;
-  border: 5px solid white;
 }
 body {
   font-family: 'Work Sans', sans-serif;
@@ -32,4 +31,5 @@ html {
   width: 80px;
   height: 20px;
   font-family: 'Work Sans', sans-serif;
+  box-shadow: 6px 6px 5px black;
 }
