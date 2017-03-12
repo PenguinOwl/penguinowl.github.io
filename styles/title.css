@@ -35,7 +35,7 @@ html {
   width: 80px;
   height: 20px;
   font-family: 'Work Sans', sans-serif;
-  box-shadow: 6px 6px 5px black;
+  box-shadow: 6px 6px 5px grey;
   display: inline-block;
 }
 .nomargin {
