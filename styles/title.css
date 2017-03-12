@@ -18,3 +18,9 @@ p {
   background: -moz-linear-gradient(right, cyan, white, white, white, cyan);
   background: linear-gradient(to right, cyan, white, white, white, cyan); 
 }
+.greenbox {
+  border: 8px solid green;
+  background-color: lightgreen;
+  padding: 15px 15px 15px 15px;
+  margin: 30px 20px 20px 20px;
+}
