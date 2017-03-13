@@ -42,3 +42,7 @@ html {
   padding: 0px;
   margin: 0px;
 }
+.fbmresize {
+  width:200;
+  height:200;
+}
