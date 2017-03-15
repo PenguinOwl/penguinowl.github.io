@@ -50,6 +50,10 @@ html {
   font-family: "Temphis Brick";
   src: url("Temphis_Brick.ttf");
 }
+@font-face {
+  font-family: "Zelda";
+  src: url("HyliaSerifBeta-Regular.otf");
+}
 .runes {
   font-family: "Temphis Brick";
   font-size: 400%;
