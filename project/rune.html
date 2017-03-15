@@ -15,8 +15,13 @@
       document.getElementById('runes').innerHTML = randword
       }
       function show() { alert(randword)) }
+      function cf(font) { document.getElementById('runes').style.fontFamily = font }
     </script>
     <button type="button" onclick="word()">New Word</button>
     <button type="button" onclick="show()">Answer</button>
+    <select name="hi" onchange="cf(this.value)">
+       <option value="Temphis Brick">Temphis</option>
+       <option value="Work Sans">English</option>
+    </select>
   </body>
 </html>
