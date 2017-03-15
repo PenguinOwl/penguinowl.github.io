@@ -46,3 +46,10 @@ html {
   width:200px;
   height:200px;
 }
+@font-face {
+  font-family: "Temphis Brick";
+  src: "http://penguinowl.github.io/styles/Temphis_Brick.ttf";
+}
+.runes {
+  font-family: "Temphis Brick";
+}
