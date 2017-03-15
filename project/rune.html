@@ -14,7 +14,7 @@
       var randword = words[Math.floor(Math.random() * words.length)];
       document.getElementById('runes').innerHTML = randword;
       }
-      function show() { alert(randword); }
+      function show() { alert(document.getElementById('runes').innerHTML); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; }
     </script>
     <button type="button" onclick="word()">New Word</button>
