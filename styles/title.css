@@ -48,7 +48,7 @@ html {
 }
 @font-face {
   font-family: "Temphis Brick";
-  src: "http://penguinowl.github.io/styles/Temphis_Brick.ttf";
+  src: url("Temphis_Brick.ttf");
 }
 .runes {
   font-family: "Temphis Brick";
