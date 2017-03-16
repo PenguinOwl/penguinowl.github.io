@@ -14,17 +14,20 @@
       var randword = words[Math.floor(Math.random() * words.length)];
       document.getElementById('runes').innerHTML = randword;
       }
+      function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').innerHTML;
       function show() { alert(document.getElementById('runes').innerHTML); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; }
     </script>
-    <h2>
-      <button type="button" onclick="word()">New Word</button>
-      <button type="button" onclick="show(); word()">Answer</button>
-      <select name="hi" onchange="cf(this.value);">
-         <option value="Temphis Brick">Temphis</option>
-         <option value="Work Sans">English</option>
-         <option value="Zelda">Sheikah</option>
-      </select>
-    </h2>
+    <button type="button" onclick="word()">New Word</button>
+    <button type="button" onclick="show(); word()">Answer</button>
+    <select name="hi" onchange="cf(this.value);">
+      <option value="Temphis Brick">Temphis</option>
+      <option value="Work Sans">English</option>
+      <option value="Zelda">Sheikah</option>
+    </select>
+    <br><br>
+    <form id="frm1">
+      Override: <input type="text" name="fword" id="frmod" onchange="ord()">
+    </form>
   </body>
 </html>
