@@ -21,7 +21,11 @@
       function check() {
         if (document.getElementById('frmod2').value == document.getElementById('runes').innerHTML) {
           document.getElementById('frmod2').value = "";
-          word()
+          if ('word()' == document.getElementById('moonb').onclick) {
+            word()
+          } else {
+            letr()
+          }
         } else {
           document.getElementById('frmod2').value = "";
         }
