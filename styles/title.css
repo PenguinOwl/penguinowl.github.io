@@ -21,7 +21,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-#center {
+.center {
   text-align: center;
   width: auto;
 }
