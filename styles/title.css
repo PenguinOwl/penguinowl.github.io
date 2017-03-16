@@ -37,6 +37,7 @@ html {
   font-family: 'Work Sans', sans-serif;
   box-shadow: 6px 6px 5px grey;
   display: inline-block;
+  vertical-align: middle;
 }
 .nomargin {
   padding: 0px;
