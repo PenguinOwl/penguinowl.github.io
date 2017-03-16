@@ -16,7 +16,7 @@
       document.getElementById('runes').innerHTML = randword;
       }
       function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').value; }
-      function show() { cf(document.getElementById('curfont').options[document.getElementById('curfont').selectedIndex].value); }
+      function show() { cf("Zelda"); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; setCookie("lang",font,5); }
       function check() {
         if (document.getElementById('frmod2').value == document.getElementById('runes').innerHTML) {
