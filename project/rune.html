@@ -29,13 +29,21 @@
       function cff() {
         document.getElementById(getCookie("lang")).selected = "selected"
       }
+      function swip(fm) {
+        document.getElementById('moonb').onclick = fm;
+        document.getElementById('moona').onclick = 'show(), ' + fm;
+      }
     </script>
-    <button type="button" onclick="word()">New Word</button>
-    <button type="button" onclick="show(); word()">Answer</button>
+    <button type="button" onclick="word()" id="moonb">New Word</button>
+    <button type="button" onclick="show(); word()" id="moona">Answer</button>
     <select name="hi" onchange="cf(this.value);">
       <option value="Temphis Brick" id="Temphis Brick">Temphis</option>
       <option value="Work Sans" id="Work Sans">English</option>
       <option value="Zelda" id="Zelda">Sheikah</option>
+    </select>
+    <select name="oog" onchange="swip(this.value);">
+      <option value="'word()'" id="word">Words</option>
+      <option value="'let()'" id="let">Letters</option>
     </select>
     <br><br>
     <form id="frm2" onsubmit="event.preventDefault(); false;">
