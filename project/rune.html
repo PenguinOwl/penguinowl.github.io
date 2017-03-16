@@ -14,7 +14,7 @@
       var randword = words[Math.floor(Math.random() * words.length)];
       document.getElementById('runes').innerHTML = randword;
       }
-      function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').innerHTML;
+      function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').value;
       function show() { alert(document.getElementById('runes').innerHTML); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; }
     </script>
@@ -26,7 +26,7 @@
       <option value="Zelda">Sheikah</option>
     </select>
     <br><br>
-    <form id="frm1">
+    <form id="frm1" onsubmit="event.preventDefault(); false;">
       Override: <input type="text" name="fword" id="frmod" onchange="ord()">
     </form>
   </body>
