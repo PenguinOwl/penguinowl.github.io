@@ -17,6 +17,14 @@
       function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').value; }
       function show() { alert(document.getElementById('runes').innerHTML); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; }
+      function check() {
+        if (document.getElementById('frmod').value == document.getElementById('runes').innerHTML) {
+          document.getElementById('frmod').value = "";
+          word()
+        } else {
+          document.getElementById('frmod').value = "";
+        }
+      }
     </script>
     <button type="button" onclick="word()">New Word</button>
     <button type="button" onclick="show(); word()">Answer</button>
@@ -26,6 +34,10 @@
       <option value="Zelda">Sheikah</option>
     </select>
     <br><br>
+    <form id="frm2" onsubmit="event.preventDefault(); false;">
+      Check: <input type="text" name="fword" id="frmod2" onchange="check()">
+    </form>
+    <br><br><br><br>
     <form id="frm1" onsubmit="event.preventDefault(); false;">
       Override: <input type="text" name="fword" id="frmod" onchange="ord()">
     </form>
