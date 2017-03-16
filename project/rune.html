@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="../styles/title.css">
   </head>
-  <body id="center">
+  <body class="center">
     <p class="runes" id='runes'>Welcome</p>
     <script>
       function word() {
@@ -17,12 +17,14 @@
       function show() { alert(document.getElementById('runes').innerHTML); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; }
     </script>
-    <button type="button" onclick="word()">New Word</button>
-    <button type="button" onclick="show(); word()">Answer</button>
-    <select name="hi" onchange="cf(this.value);">
-       <option value="Temphis Brick">Temphis</option>
-       <option value="Work Sans">English</option>
-       <option value="Zelda">Sheikah</option>
-    </select>
+    <h2>
+      <button type="button" onclick="word()">New Word</button>
+      <button type="button" onclick="show(); word()">Answer</button>
+      <select name="hi" onchange="cf(this.value);">
+         <option value="Temphis Brick">Temphis</option>
+         <option value="Work Sans">English</option>
+         <option value="Zelda">Sheikah</option>
+      </select>
+    </h2>
   </body>
 </html>
