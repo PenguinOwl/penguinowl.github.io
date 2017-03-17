@@ -16,7 +16,6 @@ $duration : 5;
 
 .wavetext span {
   display: inline-block;
-  font-family : "Fredoka One", sans-serif;
   font-size : 70px;
  
   animation-duration: #{$duration}s;
@@ -30,8 +29,5 @@ $duration : 5;
   .wavetext :nth-child( #{$count}n + #{$i} ) {
       animation-delay : 
         -#{($count - $i) * 2 * $duration / $count }s;
-
-
-      color: rgba(100+$i * 20 % 155, 10, 100+ $i * 40 % 55, 1);
   }
 }
