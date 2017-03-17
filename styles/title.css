@@ -1,9 +1,4 @@
 /* Here we go */
-
-$offset : -20px;
-$count : 40;
-$duration : 5;
-
 h1 {
   text-align: center;
   font-family: 'Nova Flat', cursive;
@@ -64,18 +59,4 @@ html {
 .runes {
   font-family: "Temphis Brick";
   font-size: 900%;
-  animation-duration: 5s;
-  animation-name: wave;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@for $i from 0 to $count {
-  .wavetext :nth-child( #{$count}n + #{$i} ) {
-      animation-delay : 
-        -#{($count - $i) * 2 * $duration / $count }s;
-
-
-      color: white;
-  }
 }
