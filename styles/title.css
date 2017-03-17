@@ -58,4 +58,8 @@ html {
 .runes {
   font-family: "Temphis Brick";
   font-size: 900%;
+  animation-duration: 5s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
