@@ -15,6 +15,11 @@
       var randword = words[Math.floor(Math.random() * words.length)];
       document.getElementById('runes').innerHTML = randword;
       }
+      function vowl() {
+      var words = ["a", "e", "i", "o", "u"];
+      var randword = words[Math.floor(Math.random() * words.length)];
+      document.getElementById('runes').innerHTML = randword;
+      }
       function show() { alert(document.getElementById('runes').innerHTML); }
       function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').value; }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; setCookie("lang",font,5); }
@@ -37,6 +42,8 @@
       function gen() {
          if ("word" == document.getElementById('sf').value) {
             word();
+          } else if ("vowl" == document.getElementById('sf').value) {
+            vowl();
           } else {
             letr();
           }
@@ -49,9 +56,10 @@
       <option value="Work Sans" id="Work Sans">English</option>
       <option value="Zelda" id="Zelda">Sheikah</option>
     </select>
-    <select name="oog" onchange="swip(this.value);gen();" id="sf">
+    <select name="oog" onchange="swip(this.value);" id="sf">
       <option value="word" id="word">Words</option>
       <option value="letr" id="letr">Letters</option>
+      <option value="vowl" id="vowl">Vowels</option>
     </select>
     <br><br>
     <form id="frm2" onsubmit="event.preventDefault(); false;">
