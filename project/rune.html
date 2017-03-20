@@ -15,6 +15,7 @@
       var randword = words[Math.floor(Math.random() * words.length)];
       document.getElementById('runes').innerHTML = randword;
       }
+      function show() { alert(randword); }
       function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').value; }
       function show() { cf("Zelda"); }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; setCookie("lang",font,5); }
@@ -43,6 +44,7 @@
       }
     </script>
     <button type="button" onclick="gen()" id="moonb">New Word</button>
+    <button type="button" onclick="show()">Answer</button>
     <select name="hi" onchange="cf(this.value);" id="curfont">
       <option value="Temphis Brick" id="Temphis Brick">Temphis</option>
       <option value="Work Sans" id="Work Sans">English</option>
