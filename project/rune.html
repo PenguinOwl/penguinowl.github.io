@@ -15,7 +15,7 @@
       var randword = words[Math.floor(Math.random() * words.length)];
       document.getElementById('runes').innerHTML = randword;
       }
-      function show() { alert(randword); }
+      function show() { alert(document.getElementById('runes').innerHTML); }
       function ord() { document.getElementById('runes').innerHTML = document.getElementById('frmod').value; }
       function cf(font) { document.getElementById('runes').style.fontFamily = font; setCookie("lang",font,5); }
       function check() {
