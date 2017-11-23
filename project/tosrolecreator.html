@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="http://i63.tinypic.com/24vjeo9.jpg">
+    <title>PenguinOwl's Lair - Town Of Salem Role Concept Creator</title>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/title.css">
+  </head>
+  <body class="center" onload="cff()">\
+    <script>
+      function createRole() {}
+    </script>
+    <button type="button" onclick="gen()" id="moonb">New Word</button>
+    <button type="button" onclick="show()">Answer</button>
+    <select name="hi" onchange="cf(this.value);" id="curfont">
+      <option value="Temphis Brick" id="Temphis Brick">Temphis</option>
+      <option value="Work Sans" id="Work Sans">English</option>
+      <option value="Zelda" id="Zelda">Sheikah</option>
+      <option value="SGA" id="SGA">SGA</option>
+    </select>
+    <select name="oog" onchange="gen();" id="sf">
+      <option value="word" id="word">Words</option>
+      <option value="letr" id="letr">Letters</option>
+      <option value="vowl" id="vowl">Vowels</option>
+    </select>
+    <br><br>
+    <form id="frm2" onsubmit="event.preventDefault(); false;">
+      Check: <input type="text" name="fword" id="frmod2" onchange="check()" autofocus="autofocus">
+    </form>
+    <br><br><br><br>
+    <form id="frm1" onsubmit="event.preventDefault(); false;">
+      Override: <input type="text" name="fword" id="frmod" onchange="ord()">
+    </form>
+    <embed src="../styles/music/bensound-slowmotion.mp3" autostart="true" loop="true" hidden="true">
+  </body>
+</html>
