@@ -60,6 +60,10 @@ html {
   font-family: "Temphis Brick";
   font-size: 900%;
 }
+.runesnf {
+  font-family: "Work Sans";
+  font-size: 900%;
+}
 @font-face {
   font-family: "SGA";
   src: url("sga.ttf");
