@@ -7,12 +7,40 @@
     <link rel="stylesheet" href="../styles/title.css">
   </head>
   <body class="center" onload="cff()">
+    <p class="runes" id='runes' contenteditable="false">Town of Salem Role Creator</p>
     <script>
-      function g(id) {return document.getElementById(id).value};
+      function g(id) {
+      	if (document.getElementById(id).value == "") {
+          return "None";
+        } else {
+          return document.getElementById(id).value;
+        }
+        }
+      function getGoal() {
+        if (g("al") == "Town") {
+        return "Lynch every criminal and evildoer.";
+        } else if (g("al") == "Mafia") {
+        return "Kill anyone that will not submit to the Mafia.";
+        } else if (g("al") == "Coven") {
+        return "Kill everyone who stands in the way of the Coven.";
+        } else {
+        return g("goal1");
+        }
+        }
       function createRole() {
-        p1 = "```"+g("name")+" "+g("align")+" ("+g("type")+")\nAbility: "+g("abil");
-        document.getElementById("final").value = p1;
-        document.getElementById("name").value = "moo";
+        var p1 = "```" + g("name") + " (" + g("al") + " " + g("ty") + ")\nAbility:\n- " + g("abil") + "\nAttributes:\n- " + g("atb1");
+        var pa = "";
+        if (g("atb2") != "None") {
+        pa = pa + "\n- " + g("atb2");
+        }
+        if (g("atb3") != "None") {
+        pa = pa + "\n- " + g("atb3");
+        }
+        if (g("atb4") != "None") {
+        pa = pa + "\n- " + g("atb4");
+        }
+        var p2 = "\nGoal:\n" + getGoal(); 
+        document.getElementById("final").value = p1 + pa + p2;
       }
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
@@ -43,7 +71,6 @@
       <option value="Town" id="twn">Town</option>
       <option value="Mafia" id="maf">Mafia</option>
       <option value="Coven" id="cov">Coven</option>
-      <option value="Coven" id="cov">Coven</option>
       <option value="Neutral" id="nue">Neutral</option>
     </select>
     <select name="type" onchange="createRole();" id="ty">
@@ -63,6 +90,7 @@
     </form>
     <br>
     <textarea rows="10" cols="30" readonly="true" id="final"></textarea>
+    <button type="button" onclick="createRole()">Create Role</button>
   </body>
-  <p>deticated to the skimm community</p><br><p>Version 0.1.1</p>
+  <p>deticated to the skimm community</p><p>Version 1.0.1</p>
 </html>
