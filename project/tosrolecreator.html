@@ -10,27 +10,43 @@
     <script>
       function createRole() {}
     </script>
-    <button type="button" onclick="gen()" id="moonb">New Word</button>
-    <button type="button" onclick="show()">Answer</button>
-    <select name="hi" onchange="cf(this.value);" id="curfont">
-      <option value="Temphis Brick" id="Temphis Brick">Temphis</option>
-      <option value="Work Sans" id="Work Sans">English</option>
-      <option value="Zelda" id="Zelda">Sheikah</option>
-      <option value="SGA" id="SGA">SGA</option>
-    </select>
-    <select name="oog" onchange="gen();" id="sf">
-      <option value="word" id="word">Words</option>
-      <option value="letr" id="letr">Letters</option>
-      <option value="vowl" id="vowl">Vowels</option>
-    </select>
-    <br><br>
-    <form id="frm2" onsubmit="event.preventDefault(); false;">
-      Check: <input type="text" name="fword" id="frmod2" onchange="check()" autofocus="autofocus">
+    <form id="namef" onsubmit="event.preventDefault(); false;">
+      Name: <input type="text" name="name" id="name" onchange="createRole()">
     </form>
-    <br><br><br><br>
-    <form id="frm1" onsubmit="event.preventDefault(); false;">
-      Override: <input type="text" name="fword" id="frmod" onchange="ord()">
+    <form id="ability" onsubmit="event.preventDefault(); false;">
+      Ability: <input type="text" name="abil" id="abil" onchange="createRole()">
     </form>
-    <embed src="../styles/music/bensound-slowmotion.mp3" autostart="true" loop="true" hidden="true">
+    <form id="atribute1" onsubmit="event.preventDefault(); false;">
+      Attribute 1: <input type="text" name="atb1" id="atb1" onchange="createRole()">
+    </form>
+    <form id="atribute1" onsubmit="event.preventDefault(); false;">
+      Attribute 2: <input type="text" name="atb2" id="atb2" onchange="createRole()">
+    </form>
+    <form id="atribute1" onsubmit="event.preventDefault(); false;">
+      Attribute 3: <input type="text" name="atb3" id="atb3" onchange="createRole()">
+    </form>
+    <form id="atribute1" onsubmit="event.preventDefault(); false;">
+      Attribute 4: <input type="text" name="atb4" id="atb4" onchange="createRole()">
+    </form>
+    <select name="align" onchange="createRole();" id="al">
+      <option value="Town" id="twn">Town</option>
+      <option value="Mafia" id="maf">Mafia</option>
+      <option value="Coven" id="cov">Coven</option>
+      <option value="Coven" id="cov">Coven</option>
+      <option value="Neutral" id="nue">Neutral</option>
+    </select>
+    <select name="type" onchange="createRole();" id="ty">
+      <option value="Investigative" id="ti">Investigative</option>
+      <option value="Support" id="ts">Support</option>
+      <option value="Killing" id="tk">Killing</option>
+      <option value="Protective" id="cov">Protective</option>
+      <option value="Deception" id="md">Deception</option>
+      <option value="Evil" id="ne">Evil</option>
+      <option value="Chaos" id="nc">Chaos</option>
+      <option value="Bengin" id="nb">Deception</option>
+    </select>
+    <form id="goal" onsubmit="event.preventDefault(); false;">
+      Goal: <input type="text" name="goal1" id="goal1" onchange="createRole()">
+    </form>
   </body>
 </html>
