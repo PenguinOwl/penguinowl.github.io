@@ -11,7 +11,7 @@
       function g(id) {return document.getElementById(id).value};
       function createRole() {
         p1 = "```"+g("name")+" "+g("align")+" ("+g("type")+")\nAbility: "+g("abil");
-        g("final")=a;
+        document.getElementById('final').Value=p1;
       }
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
