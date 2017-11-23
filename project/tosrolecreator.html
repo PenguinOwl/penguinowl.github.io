@@ -12,6 +12,7 @@
       function createRole() {
         p1 = "```"+g("name")+" "+g("align")+" ("+g("type")+")\nAbility: "+g("abil");
         document.getElementById('final').value = p1;
+        document.getElementById('final').value = "moo";
       }
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
@@ -55,6 +56,7 @@
       <option value="Chaos" id="nc">Chaos</option>
       <option value="Bengin" id="nb">Deception</option>
     </select>
+    <br>
     <br>
     <form id="goal" onsubmit="event.preventDefault(); false;">
       Goal: <input type="text" name="goal1" id="goal1" onchange="createRole()">
