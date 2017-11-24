@@ -16,6 +16,20 @@
           return document.getElementById(id).value;
         }
         }
+      function c(text) {
+        if (g("fmat")=="c") {
+          return text;
+        } else {
+          return "";
+        }
+      }
+      function m(text) {
+        if (g("fmat")=="m") {
+          return text;
+        } else {
+          return "";
+        }
+      }
       function getGoal() {
         if (g("al") == "Town") {
         return "Lynch every criminal and evildoer.";
@@ -28,7 +42,7 @@
         }
         }
       function createRole() {
-        var p1 = "```" + g("name") + " (" + g("al") + " " + g("ty") + ")\nAttack: "+g("atk")+"\nDefence: " + g("def") + "\nAbility:\n- " + g("abil") + "\nAttributes:\n- " + g("atb1");
+        var p1 = c("```") + m("**") + g("name") + m("**") + m("*") + " (" + g("al") + " " + g("ty") + ")" + m("*") + m("**") + "\nAttack: " + m("**") + g("atk") + "\n" + m("**") + "Defence: " + m("**") + g("def") + "\n" + m("**") + "Ability:" + m("**") + "\n- " + g("abil") + "\n" + m("**") + "Attributes:" + m("**") + "\n- " + g("atb1");
         var pa = "";
         if (g("atb2") != "None") {
         pa = pa + "\n- " + g("atb2");
@@ -40,7 +54,7 @@
         pa = pa + "\n- " + g("atb4");
         }
         var p2 = "\nGoal:\n" + getGoal(); 
-        document.getElementById("final").value = p1 + pa + p2 + "```";
+        document.getElementById("final").value = p1 + pa + p2 + c("```");
       }
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
@@ -103,6 +117,13 @@
     </form>
     <br>
     <textarea rows="10" cols="30" readonly="true" id="final"></textarea>
+    <br>
+    <p>Formatting Type:</p>
+    <select name="format" onchange="createRole();" id="fmat">
+      <option value="p" id="f1">Plain Text</option>
+      <option value="c" id="f2">Code Block</option>
+      <option value="m" id="f3">Markdown</option>
+    </select>
   </body>
   <p>dedicated to the skimm community</p><p>Version 1.0.2</p>
 </html>
