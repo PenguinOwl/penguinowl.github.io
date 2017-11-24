@@ -42,7 +42,7 @@
         }
         }
       function createRole() {
-        var p1 = c("```") + m("**") + g("name") + m("**") + " " + m("*") + "(" + g("al") + " " + g("ty") + ")" + m("*") + " " + m("**") + "\nAttack: " + m("**") + g("atk") + "\n" + m("**") + "Defence: " + m("**") + g("def") + "\n" + m("**") + "Ability:" + m("**") + "\n- " + g("abil") + "\n" + m("**") + "Attributes:" + m("**") + "\n- " + g("atb1");
+        var p1 = c("```") + m("**") + g("name") + m("**") + " " + m("*") + "(" + g("al") + " " + g("ty") + ")" + m("*") + " " + m("**") + "\nAttack: " + m("**") + g("atk") + "\n" + m("**") + "Defence: " + m("**") + g("def") + "\n" + m("**") + "Ability:" + m("**") + "\n- " + g("abil") + "\n" + m("**") + "Attributes:" + m("**") + "\n- " + g("atb1") + " " + m("*");
         var pa = "";
         if (g("atb2") != "None") {
         pa = pa + "\n- " + g("atb2");
@@ -53,8 +53,8 @@
         if (g("atb4") != "None") {
         pa = pa + "\n- " + g("atb4");
         }
-        var p2 = "\nGoal:\n" + getGoal(); 
-        document.getElementById("final").value = p1 + pa + p2 + c("```");
+        var p2 = "\n" + m("**") + "Goal:" + m("**") + "\n" + getGoal(); 
+        document.getElementById("final").value = p1 + pa + m("*") + p2 + c("```");
       }
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
