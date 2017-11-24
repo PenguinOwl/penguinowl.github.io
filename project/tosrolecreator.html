@@ -60,6 +60,8 @@
         }
         var p2 = "\n" + m("**") + "Goal:" + m("**") + "\n" + getGoal(); 
         document.getElementById("final").value = p1 + pa + m("*") + p2 + c("```");
+        if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+          document.getElementById("final").readonly = "false";
       }
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
@@ -132,5 +134,5 @@
     </select>
     
   </body>
-  <p>dedicated to the skimm community</p><p>Version 1.2.5</p>
+  <p>dedicated to the skimm community</p><p>Version 1.2.6</p>
 </html>
