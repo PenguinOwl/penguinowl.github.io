@@ -28,7 +28,7 @@
         }
         }
       function createRole() {
-        var p1 = "```" + g("name") + " (" + g("al") + " " + g("ty") + ")\nAbility:\n- " + g("abil") + "\nAttributes:\n- " + g("atb1");
+        var p1 = "```" + g("name") + " (" + g("al") + " " + g("ty") + ")\nAttack: "+g("atk")+" Defence: " + g("def") + "\nAbility:\n- " + g("abil") + "\nAttributes:\n- " + g("atb1");
         var pa = "";
         if (g("atb2") != "None") {
         pa = pa + "\n- " + g("atb2");
@@ -45,7 +45,19 @@
     </script>
     <form id="namef" onsubmit="event.preventDefault(); false;">
       Name: <input type="text" name="name" id="name" onchange="createRole()">
-    </form>
+    </form><p>Attack: </p>
+    <select name="attack" onchange="createRole();" id="atk">
+      <option value="None" id="a1">None</option>
+      <option value="Basic" id="a2">Basic</option>
+      <option value="Powerful" id="a3">Powerful</option>
+      <option value="Unstoppable" id="a4">Unstoppable</option>
+    </select><p>   Defence: </p>
+    <select name="defence" onchange="createRole();" id="def">
+      <option value="None" id="d1">None</option>
+      <option value="Basic" id="d2">Basic</option>
+      <option value="Powerful" id="d3">Powerful</option>
+      <option value="Invulnerable" id="d4">Invulnerable</option>
+    </select>
     <br>
     <form id="ability" onsubmit="event.preventDefault(); false;">
       Ability: <input type="text" name="abil" id="abil" onchange="createRole()">
@@ -77,11 +89,11 @@
       <option value="Investigative" id="ti">Investigative</option>
       <option value="Support" id="ts">Support</option>
       <option value="Killing" id="tk">Killing</option>
-      <option value="Protective" id="cov">Protective</option>
+      <option value="Protective" id="tp">Protective</option>
       <option value="Deception" id="md">Deception</option>
       <option value="Evil" id="ne">Evil</option>
       <option value="Chaos" id="nc">Chaos</option>
-      <option value="Bengin" id="nb">Deception</option>
+      <option value="Bengin" id="nb">Bengin</option>
     </select>
     <br>
     <br>
