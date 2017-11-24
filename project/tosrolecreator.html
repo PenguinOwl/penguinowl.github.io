@@ -16,6 +16,11 @@
           return document.getElementById(id).value;
         }
         }
+      function copy() {
+        var copyText = document.getElementById("final");
+        copyText.select();
+        document.execCommand("Copy");]
+      }
       function c(text) {
         if (g("fmat")=="c") {
           return text;
@@ -116,6 +121,7 @@
       Goal: <input type="text" name="goal1" id="goal1" onchange="createRole()">
     </form>
     <br>
+    <button type="button" onclick="copy()" id="copy">Copy</button>
     <textarea rows="10" cols="30" readonly="true" id="final"></textarea>
     <br>
     <p>Formatting Type:</p>
@@ -124,6 +130,7 @@
       <option value="c" id="f2" selected="selected">Code Block</option>
       <option value="m" id="f3">Markdown</option>
     </select>
+    
   </body>
   <p>dedicated to the skimm community</p><p>Version 1.2.2</p>
 </html>
