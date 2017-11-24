@@ -9,25 +9,6 @@
   <body class="center" onload="cff()">
     <p class="runesnf" id='runesnf' contenteditable="false">Town of Salem Role Creator</p>
     <script>
-      function iOS() {
-
-  var iDevices = [
-    'iPad Simulator',
-    'iPhone Simulator',
-    'iPod Simulator',
-    'iPad',
-    'iPhone',
-    'iPod'
-  ];
-
-  if (!!navigator.platform) {
-    while (iDevices.length) {
-      if (navigator.platform === iDevices.pop()){ return true; }
-    }
-  }
-
-  return false;
-}
       function g(id) {
       	if (document.getElementById(id).value == "") {
           return "None";
@@ -144,7 +125,7 @@
     </form>
     <br>
     <button type="button" onclick="copy()" id="copy">Copy</button><br>
-    <textarea rows="10" cols="30" readonly="true" id="final"></textarea>
+    <textarea rows="10" cols="30" readonly="false" id="final"></textarea>
     <br>
     <p>Formatting Type:</p>
     <select name="format" onchange="createRole();" id="fmat">
