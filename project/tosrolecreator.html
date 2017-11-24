@@ -28,7 +28,7 @@
         }
         }
       function createRole() {
-        var p1 = "```" + g("name") + " (" + g("al") + " " + g("ty") + ")\nAttack: "+g("atk")+" Defence: " + g("def") + "\nAbility:\n- " + g("abil") + "\nAttributes:\n- " + g("atb1");
+        var p1 = "```" + g("name") + " (" + g("al") + " " + g("ty") + ")\nAttack: "+g("atk")+"\nDefence: " + g("def") + "\nAbility:\n- " + g("abil") + "\nAttributes:\n- " + g("atb1");
         var pa = "";
         if (g("atb2") != "None") {
         pa = pa + "\n- " + g("atb2");
@@ -58,6 +58,7 @@
       <option value="Powerful" id="d3">Powerful</option>
       <option value="Invulnerable" id="d4">Invulnerable</option>
     </select>
+    <br>
     <br>
     <form id="ability" onsubmit="event.preventDefault(); false;">
       Ability: <input type="text" name="abil" id="abil" onchange="createRole()">
