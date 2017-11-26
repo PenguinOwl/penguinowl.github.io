@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="http://i63.tinypic.com/24vjeo9.jpg">
+    <title>PenguinOwl's Lair - Town Of Salem Role Concept Creator</title>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/title.css">
+  </head>
+  <body class="center" onload="cff()">
+    <p class="runesnf" id='runesnf' contenteditable="false">Town of Salem Will Templates</p>
+    <script>
+      function copy(target) {
+        var copyText = document.getElementById(target);
+        copyText.select();
+        document.execCommand("Copy");
+      }
+    </script>
+    <button type="button" onclick="copy('final')" id="copy">Copy Role Sheet</button><br>
+    <textarea rows="20" cols="55" id="final">TI1 - \nTI2 - \nTP - \nTS - \nTK - \nRM1 - \nRM2 - \nNE - \nNK - </textarea>
+    <button type="button" onclick="copy('final2')" id="copy">Copy Night Logs</button><br>
+    <textarea rows="20" cols="55" id="final2">N1 - \nN2 - \nN3 - \nN4 - \nN5 - \nN6 - \nN7 - \nN8 - </textarea>
+  </body>
+</html>
