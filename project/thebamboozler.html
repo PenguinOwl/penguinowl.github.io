@@ -25,8 +25,8 @@
       function bam() {
         var string = g("new").toLowerCase();
         var stringa = string.replace(/\s/g,"\n");
-        var stringa = string.replace(/\w/g,":regional_indicator_$&: ");
-        document.getElementById("final").value = stringa;
+        var stringb = stringa.replace(/\w/g,":regional_indicator_$&: ");
+        document.getElementById("final").value = stringb;
       }
     </script>
     <textarea rows="10" cols="30" id="new" wrap="hard" onkeyup="bam()" onchange="bam()">Put text here!</textarea><br><br>
