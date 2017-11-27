@@ -23,7 +23,7 @@
         document.execCommand("Copy");
       }
       function bam() {
-        var string = g("new");
+        var string = g("new").toLowerCase();
         var stringa = string.replace(/\s/g,"\n");
         var stringa = string.replace(/\w/g,":regional_indicator_$&: ");
         document.getElementById("final").value = stringa;
