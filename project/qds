@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="http://i63.tinypic.com/24vjeo9.jpg">
+    <title>PenguinOwl's Lair - Town Of Salem Role Concept Creator</title>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/title.css">
+  </head>
+  <body class="center" onload="cff()">
+    <p class="runesnf" id='runesnf' contenteditable="false">QDS</p>
+    <script>
+      function add() {
+      var id = document.getElementById("subs").value;
+      var element = document.getElementById("wrap");
+      	if (id == "input") {
+          var para = document.createElement("textarea");
+          element.appendChild(para);
+          element.appendChild(document.createElement("br"));
+        } else {
+          var para = document.createElement("p");
+          var node = document.createTextNode(id);
+          para.appendChild(node);
+          element.appendChild(para);
+          element.appendChild(document.createElement("br"));
+        }
+        }
+    </script>
+    <form id="sssss" onsubmit="event.preventDefault(); false;">
+      Add: <input type="text" name="name" id="subs">
+    </form>
+    <button type="button" onclick="add()" id="copy">Add</button><br>
+    <div id="wrap">
+    </div>
+  </body>
+  <p>dedicated to the skimm community</p><p>Version 1.2.8</p>
+</html>
