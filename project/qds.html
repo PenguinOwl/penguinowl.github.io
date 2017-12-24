@@ -28,19 +28,21 @@
           element.appendChild(para);
           element.appendChild(document.createElement("br"));
       }
+      function ls() {
       var wage = document.getElementById("wage");
 wage.addEventListener("keydown", function (e) {
     if (e.keyCode === 220) {
         addinput();
     }
 });
+      }
         
     </script>
     <form id="sssss" action="#" onsubmit="event.preventDefault(); false;" onchange="add()">
       Add: <input type="text" name="name" id="subs">
     </form>
     <button type="button" onclick="add()" id="copy">Add</button><br>
-    <div id="wrap">
+    <div id="wrap" onload="ls()">
     </div>
   </body>
 </html>
